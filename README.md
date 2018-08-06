@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Portfolio
 User portfolio
 
@@ -13,4 +11,4 @@ STACK USED
 1) BootStrap link :https://getbootstrap.com/docs/3.3/
 2)Sass : https://sass-lang.com/
 3) Gulp for compiling sass 
->>>>>>> a8100c39a6df7393162fd3dda1c2646b65046755
+
