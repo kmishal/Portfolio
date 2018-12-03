@@ -1,2 +1,64 @@
+@import "import";
+
+// =======================
+// Individual section Styling
+// =======================
+
+// Home section
+#section0{
+    .my-header{
+        position: relative;
+        line-height: 1.3;
+        .header-text{
+            position: relative;
+        }
+        .rectangle{
+            width: 247px;
+            height: 314px;
+            position: absolute;
+            border: 3px solid $red-text;
+            top: -90px;
+            left: -20px;
+        }
+        .hire-me{
+            position: relative;
+            z-index: 4;
+            margin-left: 240px;
+            margin-top: 30px;
+            :hover{
+                    background: $white-text;
+                    color: $red-text;
+                    transition: 0.3s;
+                    border-radius: 10px;
+                }
+            a{
+                border: 0.5px solid $white-text;
+                padding: 10px 45px;
+                font-size: 1.5em;
+                text-decoration: none;
+                color: $white-text;
+                font-family: $header-light;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+// About Me section
+
+// Skills section
+
+// Work History
+
+// Portfolio section
+
+// Contact section
 
 
+
+// .section{
+//     box-shadow: 1px 3px 0px $red-text;
+// }
+// .border-container{
+//     border: 2px solid red; 
+// }

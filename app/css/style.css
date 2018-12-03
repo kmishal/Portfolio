@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url("../fonts/text-fonts/Montserrat-Bold.WOFF") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url("../fonts/text-fonts/Montserrat-Regular.WOFF") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat-light';
+  src: url("../fonts/text-fonts/Montserrat-Light.WOFF") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../fonts/text-fonts/Lato-Bold.WOFF") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../fonts/text-fonts/Lato-Regular.WOFF") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "montserrat-regular", sans-serif; }
+
+h1 {
+  font-size: 2.188em;
+  font-family: "montserrat-regular", sans-serif; }
+
+.button-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 64px;
+  z-index: 2; }
+  .button-nav .button-section {
+    height: 64px;
+    width: 64px;
+    background: #e3586b;
+    float: left; }
+    .button-nav .button-section .lines-hamburger {
+      padding-top: 12px; }
+      .button-nav .button-section .lines-hamburger .line {
+        width: 26px;
+        height: 2px;
+        background: #ffffff;
+        margin: 8px auto; }
+  .button-nav .name-section {
+    width: 116px;
+    height: 64px;
+    float: right; }
+    .button-nav .name-section p {
+      margin: 16px 0 32px 5px;
+      line-height: 1.2; }
+
+.text-highlight {
+  color: #e3586b; }
+
+.text-bold {
+  font-family: "montserrat-bold", sans-serif; }
+
+.text-italic {
+  font-style: italic; }
+
+.section-header {
+  margin-top: 80px;
+  margin-bottom: 40px; }
+  .section-header p {
+    font-size: 1.5em;
+    font-family: "montserrat-bold", sans-serif;
+    text-transform: uppercase;
+    color: #e3586b; }
+
+.section-text {
+  margin-top: 40px; }
+  .section-text p {
+    font-size: 1.125em;
+    font-family: "Lato-Regular", sans-serif;
+    color: #ffffff;
+    line-height: 1.3; }
+
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
+  background: #e3586b;
+  border: 2px solid #ffffff;
+  height: 13px;
+  width: 13px; }
+
+#fp-nav ul li a, .fp-slidesNav ul li a {
+  background: #ffffff;
+  border: 2px solid #e3586b;
+  border-radius: 100%; }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: none;
+  height: 13px;
+  width: 13px; }
+
+#section0 .my-header {
+  position: relative;
+  line-height: 1.3; }
+  #section0 .my-header .header-text {
+    position: relative; }
+  #section0 .my-header .rectangle {
+    width: 247px;
+    height: 314px;
+    position: absolute;
+    border: 3px solid #e3586b;
+    top: -90px;
+    left: -20px; }
+  #section0 .my-header .hire-me {
+    position: relative;
+    z-index: 4;
+    margin-left: 240px;
+    margin-top: 30px; }
+    #section0 .my-header .hire-me :hover {
+      background: #ffffff;
+      color: #e3586b;
+      transition: 0.3s;
+      border-radius: 10px; }
+    #section0 .my-header .hire-me a {
+      border: 0.5px solid #ffffff;
+      padding: 10px 45px;
+      font-size: 1.5em;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "montserrat-light", sans-serif;
+      transition: 0.3s; }

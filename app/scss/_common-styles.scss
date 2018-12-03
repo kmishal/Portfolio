@@ -1,0 +1,113 @@
+// Common styling
+body{
+    color: $white-text;
+    font-size: $base-fontsize;
+    font-family: $header-regular;
+}
+h1{
+    font-size: 2.188em;
+    font-family: $header-regular;
+   
+}
+
+// navigation
+.button-nav{
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    width: 180px;
+    height: 64px;
+    z-index: 2;
+    .button-section{
+        height: 64px;
+        width: 64px;
+        background: $red-text;
+        float: left;
+        .lines-hamburger{
+            padding-top: 12px;
+            .line{
+            width: 26px;
+            height: 2px;
+            background: $white-text;
+            margin: 8px auto; 
+            }
+        }
+    }
+    .name-section{
+        // display: inline-block;
+        width: 116px;
+        height: 64px;
+        float: right;
+        p{
+            // margin-left: 5px;
+            margin: 16px 0 32px 5px;
+            line-height: 1.2;
+        }
+    }
+}
+// text hightlight
+.text-highlight{
+    color: $red-text;
+}
+.text-bold{
+    font-family: $header-bold;
+}
+.text-italic{
+    
+    font-style: italic;    
+}
+
+.section-header{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    p{
+    font-size : 1.5em;
+    font-family: $header-bold;
+    text-transform: uppercase;
+    color: $red-text;
+    }
+}
+.section-text{
+    margin-top: 40px;
+    p{
+    font-size : 1.125em;
+    font-family: $text-regular;
+    color: $white-text;
+    line-height: 1.3;
+    }
+}
+// Fixed Nav styling
+// Active 
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+    background : $red-text;
+    border: 2px solid $white-text;
+    height: 13px;
+    width: 13px;
+}
+// Inactive
+#fp-nav ul li a, .fp-slidesNav ul li a{
+    background : $white-text;
+    border: 2px solid $red-text;
+    // height: 13px;
+    // width: 13px;
+    border-radius: 100%;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background : none;
+    height: 13px;
+    width: 13px;
+}
+
+// Draw rectange
+// .my-header{
+//     position: relative;
+//     .rectangle{
+//         width: 247px;
+//         height: 314px;
+//         position: absolute;
+//         border: 3px solid $red-text;
+//         top: -90px;
+//         left: -20px;
+//     }
+// }
