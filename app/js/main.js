@@ -13,7 +13,8 @@ $(document).ready(function() {
         fitToSection: true,
         loopBottom: true,
         fadingEffect: true,
-        scrollOverflow: true
+        scrollOverflow: true,
+        responsiveWidth: 767
     });
     $.fn.fullpage.setAllowScrolling(true);
 
