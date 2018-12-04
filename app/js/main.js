@@ -9,12 +9,15 @@ $(document).ready(function() {
         navigation: true,
         navigationTooltips: ['Home', 'About-Me', 'Skills', 'Work-History', 'Portfolio', 'Contact'],
         css3: true,
-        scrollingSpeed: 700,
+        // scrollingSpeed: 700,
         fitToSection: true,
         loopBottom: true,
         fadingEffect: true,
         scrollOverflow: true,
-        responsiveWidth: 767
+        responsiveWidth: 767,
+        easingcss3: 'cubic-bezier(1.000, -0.440, 0.265, 1.385)',
+        scrollingSpeed: 1200,
+        v2compatible: true
     });
     $.fn.fullpage.setAllowScrolling(true);
 
