@@ -74,32 +74,67 @@ h1 {
   font-size: 2.188em;
   font-family: "montserrat-regular", sans-serif; }
 
-.button-nav {
+#button-nav {
   position: absolute;
   top: 0;
   left: 0;
   width: 180px;
   height: 64px;
-  z-index: 2; }
-  .button-nav .button-section {
+  z-index: 103; }
+  #button-nav .button-section {
     height: 64px;
     width: 64px;
     background: #e3586b;
     float: left; }
-    .button-nav .button-section .lines-hamburger {
-      padding-top: 12px; }
-      .button-nav .button-section .lines-hamburger .line {
-        width: 26px;
-        height: 2px;
-        background: #ffffff;
-        margin: 8px auto; }
-  .button-nav .name-section {
+    #button-nav .button-section .lines-hamburger .line {
+      width: 26px;
+      height: 2px;
+      background: #ffffff;
+      margin: 8px auto; }
+    #button-nav .button-section .lines-hamburger .hamburger {
+      padding: 18px 10px; }
+      #button-nav .button-section .lines-hamburger .hamburger .hamburger-box .hamburger-inner {
+        background-color: #ffffff;
+        border-radius: 0; }
+        #button-nav .button-section .lines-hamburger .hamburger .hamburger-box .hamburger-inner::after {
+          background-color: #ffffff;
+          border-radius: 0; }
+        #button-nav .button-section .lines-hamburger .hamburger .hamburger-box .hamburger-inner::before {
+          background-color: #ffffff;
+          border-radius: 0; }
+  #button-nav .name-section {
     width: 116px;
     height: 64px;
     float: right; }
-    .button-nav .name-section p {
+    #button-nav .name-section p {
       margin: 16px 0 32px 5px;
       line-height: 1.2; }
+
+#pop-nav {
+  background: rgba(39, 39, 39, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 102;
+  display: none; }
+  #pop-nav .menu-list {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute; }
+    #pop-nav .menu-list ul li {
+      text-align: center;
+      line-height: 1.5; }
+      #pop-nav .menu-list ul li a {
+        font-size: 2.250em;
+        color: #ffffff; }
+
+.pop-active {
+  display: block; }
 
 .text-highlight {
   color: #e3586b; }
@@ -119,9 +154,9 @@ h1 {
     text-transform: uppercase;
     color: #e3586b; }
 
-.section-text {
+.section-content {
   margin-top: 40px; }
-  .section-text p {
+  .section-content p {
     font-size: 1.125em;
     font-family: "Lato-Regular", sans-serif;
     color: #ffffff;

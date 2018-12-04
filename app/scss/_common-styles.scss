@@ -11,30 +11,46 @@ h1{
 }
 
 // navigation
-.button-nav{
+#button-nav{
     position: absolute;
     top: 0 ;
     left: 0;
     width: 180px;
     height: 64px;
-    z-index: 2;
+    z-index: 103;
     .button-section{
         height: 64px;
         width: 64px;
         background: $red-text;
         float: left;
         .lines-hamburger{
-            padding-top: 12px;
+            // padding-top: 12px;
             .line{
             width: 26px;
             height: 2px;
             background: $white-text;
             margin: 8px auto; 
             }
+            .hamburger{
+                padding: 18px 10px;
+                .hamburger-box{
+                    .hamburger-inner{
+                        background-color: $white-text;
+                        border-radius: 0;
+                        &::after{
+                            background-color: $white-text;
+                            border-radius: 0;
+                        }
+                        &::before{
+                            background-color: $white-text;
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
         }
     }
     .name-section{
-        // display: inline-block;
         width: 116px;
         height: 64px;
         float: right;
@@ -44,6 +60,40 @@ h1{
             line-height: 1.2;
         }
     }
+}
+
+// Pop navigation
+#pop-nav{
+    background: rgba(39, 39, 39, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 102;
+    display: none;
+    .menu-list{
+        width: 100%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        ul{
+            li{
+                text-align: center;
+                line-height: 1.5;
+                a{
+                    font-size: 2.250em;
+                    color : $white-text;
+
+                }
+            }
+        }
+    }
+}
+.pop-active{
+    display:block;
 }
 // text hightlight
 .text-highlight{
@@ -67,7 +117,7 @@ h1{
     color: $red-text;
     }
 }
-.section-text{
+.section-content{
     margin-top: 40px;
     p{
     font-size : 1.125em;
@@ -76,6 +126,7 @@ h1{
     line-height: 1.3;
     }
 }
+
 // Fixed Nav styling
 // Active 
 #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
@@ -98,16 +149,3 @@ h1{
     height: 13px;
     width: 13px;
 }
-
-// Draw rectange
-// .my-header{
-//     position: relative;
-//     .rectangle{
-//         width: 247px;
-//         height: 314px;
-//         position: absolute;
-//         border: 3px solid $red-text;
-//         top: -90px;
-//         left: -20px;
-//     }
-// }
