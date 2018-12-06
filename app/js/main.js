@@ -9,15 +9,15 @@ $(document).ready(function() {
         navigation: true,
         navigationTooltips: ['Home', 'About-Me', 'Skills', 'Work-History', 'Portfolio', 'Contact'],
         css3: true,
-        // scrollingSpeed: 700,
-        fitToSection: true,
+        fitToSection: false,
         loopBottom: true,
         fadingEffect: true,
-        scrollOverflow: true,
         responsiveWidth: 767,
         easingcss3: 'cubic-bezier(1.000, -0.440, 0.265, 1.385)',
         scrollingSpeed: 1200,
-        v2compatible: true
+        v2compatible: true,
+        scrollOverflow: true,
+        touchSensitivity: 100
     });
     $.fn.fullpage.setAllowScrolling(true);
 
@@ -34,11 +34,21 @@ $(document).ready(function() {
             });
         });
 
+    //Bar compeletion functionality
+    // get all bar elements
+    var $bars = $(".bar-completed");
+    // fetch value of completion from data-width
+    $bars.each(function(){
+        $(this).css({
+            "width": $(this).data("width")
+        });
+    });
+
 });
 
 // Hamburger Animation
 function animateHamburger(){
-    // on click on that element a popup of  background color #272727, opacity 90% will open
+   
     // nav hamburger animation
     // check if hamburger class has "is-active" class
     if ($('.hamburger').is('.is-active')) {
@@ -50,8 +60,10 @@ function animateHamburger(){
         $('.hamburger').addClass('is-active');
     }
     //Delay pop animation
+    // on click on that element a popup of  background color #272727, opacity 90% will open
     setTimeout( function(){
         $('#pop-nav').toggle('pop-active');  
     }, 250);
 }
+
 

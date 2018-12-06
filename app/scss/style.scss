@@ -47,11 +47,167 @@
 // About Me section
 
 // Skills section
+    #section2{ 
+        .section-content{
+            .skill-header{
+                margin-top: 20px;
+                p{
+                    color: $red-text;
+                    font-size: 1.375em;
+                    font-family: $text-bold;
+                }
+            }
+            .more-skills{
+                padding: 5% 2%;
+                .progress-bar-section{
+                    margin-top: 5%;
+                    padding: 0 6%;
+                    font-family: $text-bold;
+                    .text{ 
+                        font-size : 1em;
+                        color: $red-text;
+                    }
+                    .percentage{
+                        text-align: right;
+                        color: $red-text;
+                        font-size : 1em;
+                    }
+                    .total-bar{
+                        width: 100%;
+                        height: 8px;
+                        background: $white-text;
+                        position: relative;
+                        margin-top: 5%;
+                        margin-bottom: 5%;
 
+                    }
+                    .bar-completed{
+                        height: 8px;
+                        background: $red-text;
+                        position: absolute;
+                        top:0;
+                        left:0;
+                    }
+                }
+            }
+        }
+    }
 // Work History
-
+#section3{
+    .section-content{
+        .work-year{
+            p{
+                display: inline-block;
+                font-family: $text-bold;
+                color: $red-text;
+                font-size: 1.375em;
+            }
+        }
+        .seperator-line{
+            width: 60%;
+            height: 4px;
+            background: $white-text;
+            display: inline-block;
+        }
+        .company-designation{
+            p{
+                font-family: $text-bold;
+                font-size : 1.375em;
+                color: $red-text;
+                margin: 20px 0;
+            }
+        }
+        .company-name{
+            @extend .company-designation;
+            p{
+                color: $white-text;
+            }
+        }
+        .company-info{
+            p{
+                font-size: 1.125em;
+                font-family: $text-regular; 
+            }
+        }
+    }
+}
 // Portfolio section
-
+#section4{
+    .section-content{
+        .work-showcase{
+            margin: 5% 0;
+            .portfolio{
+                position: relative;
+                height: 292px;
+                width: 100%;
+                overflow: hidden; 
+                .portfolio-on-hover{
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../images/portfolio-1.jpg");
+                    background-repeat: no-repeat; 
+                    background-size: cover;
+                    background-position: center;
+                    transition: all .5s;
+                    &:hover{
+                        -webkit-transform: scale(1.2);
+                        transform: scale(1.2);
+                        &::before{
+                            display: block;
+                        }
+                        .portfolio-info{
+                            display: block;
+                        }
+                    }
+                    &:focus{
+                        -webkit-transform: scale(1.2);
+                        transform: scale(1.2);
+                    }
+                    &::before{
+                        content: "";
+                        display: none;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: rgba(39, 39, 39, 0.9);
+                        transition: 1s;
+                    }
+                }
+                .portfolio-info{
+                    position: absolute;
+                    display: none;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    p{
+                        font-size: 1.125em;
+                        font-family: $header-bold;
+                        color: $red-text;
+                        text-transform: capitalize;
+                    }
+                    .visit-link{
+                        margin-top: 25px;
+                        a{
+                        border : 1px solid $white-text;
+                        padding: 5% 8%;
+                        color: $white-text;
+                        &:hover{
+                        border : none;
+                        border-radius: 3px;
+                        color: $red-text; 
+                        background: $white-text;
+                        text-decoration: none;
+                        transition: 0.3s;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
 // Contact section
 
 
